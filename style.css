@@ -1,0 +1,85 @@
+ body{
+     background-color: rgb(255, 204, 229);
+ }
+ .Top h1{
+     text-align: center;
+     line-height: 20px;
+     margin-top: 20px;
+ }
+ .mygirl{
+    width: 300px;
+    height: 650px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px  rgb(153, 153, 230);
+    background-color: rgb(255, 218, 179);
+    border-radius: 5% ;
+ }
+ .avatar img{
+     width: 100px;
+     border-radius: 50%;
+     box-shadow: 2px 2px 50px rgb(153, 204, 255);
+ }
+ .avatar{
+     padding-top: 20px;
+     text-align: center;
+ }
+ .name{
+     text-align: center;
+ }
+ .name h3{
+     text-transform: initial;
+     color: rgb(255, 102, 204);
+     font-kerning: initial;
+ }
+ .name p{
+     text-transform: capitalize;
+     color: rgb(153, 153, 230);
+     word-spacing: 3px;
+ }
+ .block{
+     text-align: center;
+ }
+ .block h2{
+     color: rgb(226, 135, 38);
+ }
+ .block p{
+     padding-bottom:20px ;
+     color: salmon;
+ }
+ .table{
+     border: 0.5px solid black;
+     color: sienna;
+ }
+th{
+     padding-top: 10px ;
+     background-color:rgba(221, 101, 161, 0.904);
+     border-radius:10% ;
+ }
+ .social{
+    padding-top: 20px;
+    padding-left: auto;
+    text-align: center;
+    margin-left: 20px;
+ }
+ .fab{
+     text-align: center;
+     padding-right:20px
+ }
+ .footer{
+     text-align: center;
+    }
+ .footer a{
+     text-align: center;
+     text-decoration: none;
+     color: black;
+ }
+ .footer button{
+     width: 100px;
+     height: 50px;
+     border-radius:10% ;
+     background-color: rgb(199, 91, 64);
+     border: 0px ;
+ }
+ 
+ 

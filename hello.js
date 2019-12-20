@@ -1,34 +1,51 @@
-console.log('Hello World');
-console.log('cuong ko khon ');
-let name= 'Ha sua on air';
-let onAIR=' ha sua yeu hien'
-console.log("i'm "+ name)
-console.log('moi nguoi oi'+onAIR)
-console.log(`i'm ${onAIR} years old`)
-let yob = prompt(' ghi tuoi cua may vao: ');
-console.log( 2019 addEventListener+ Number(yob));
-// clear()
-// for (let i=0;i<=100;i++){
-// lt(90)
-// fd(100)
-// lt(90)
-// fd(100)
-// lt(90)
-// fd(100)
-// lt(90)
-// fd(100)
-// rt(20)
-// }
+let number1 = "", number2 = "";
+let operator;
+let switchNumber = false;
 
-// clear()
-// color("blue")
-// for(i=0; i<180; i++){
-//   lt(1)
-//   for(j=0; j<360; j++){
-//     lt(1)
-//     fd(1)
-//   }
-// }
+function numberClick(numberTarget) {
+    if (switchNumber) {
+        number2 += numberTarget
+        console.log(number2);
+    } else {
+        number1 += numberTarget;
+        console.log(number1);
+    }
+    $('#result').text($('#result').text() + numberTarget);
+}
 
- 
+$('#resultbtn').click(function() {
+    calculate();
+})
+$(document).keydown(function(event) {
 
+})
+
+function calculate() {
+    let _number1 = parseInt(number1);
+    let _number2 = parseInt(number2);
+    let result;
+    switch (operator) {
+        case "+":
+            result = _number1 + _number2;
+            break;
+        case "-":
+            result = _number1 - _number2;
+            break;
+        case "x":
+            result = _number1 * _number2;
+            break;
+        case "/":
+            result = _number1 / _number2;
+            break;
+    }
+    console.log(result);
+    document.getElementById('result').innerHTML += ' = ' + result;
+
+}
+
+function operatorClick(operatorTarget) {
+    operator = operatorTarget;
+    switchNumber = !switchNumber;
+    document.getElementById('result').innerHTML += ' ' + operatorTarget + ' ';
+
+}

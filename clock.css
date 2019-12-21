@@ -1,0 +1,155 @@
+/* @import "https://fonts.googleapis.com/css?family=Oswald:700";
+body {
+  background: black;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  width: 100vw;
+  height: 156px;
+  display: flex;
+  background: #000000;
+  position: relative;
+  font-family: 'Oswald';
+  font-weight: 700;
+}
+
+.text-overlay {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 160px;
+  box-sizing: border-box;
+}
+.text-overlay div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 auto;
+  width: 25%;
+}
+
+.Column {
+  height: 156px;
+  flex: 1 0 auto;
+  position: relative;
+  mix-blend-mode: multiply;
+  z-index: 2;
+  align-items: center;
+}
+
+.Marker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #019CDF;
+  opacity: 1;
+  border-radius: 2px;
+  overflow: hidden;
+  -webkit-animation: hueylewisandthenews 10s infinite;
+          animation: hueylewisandthenews 10s infinite;
+}
+.Marker--seconds {
+  transition: height 1s linear;
+}
+.Marker::before {
+  height: 20px;
+  width: calc(760px * 2);
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/wave.jpg);
+  position: absolute;
+  top: 0px;
+  content: '';
+  -webkit-animation: wave 10s infinite linear;
+          animation: wave 10s infinite linear;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -760px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -760px;
+  }
+}
+@-webkit-keyframes hueylewisandthenews {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(-30deg);
+            filter: hue-rotate(-30deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+}
+@keyframes hueylewisandthenews {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(-30deg);
+            filter: hue-rotate(-30deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+} */
+
+html,body {
+  height: 100%;
+}
+body {
+  background: #0f3854;
+  background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+  background-size: 100%;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.clock {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+}
+  .time {
+      letter-spacing: 0.05em;
+      font-size: 80px;
+      padding: 5px 0;
+  }
+  .date{
+      letter-spacing: 0.1em;
+      font-size: 24px;
+  }
+  .text {
+      letter-spacing: 0.1em;
+      font-size: 12px;
+      padding: 20px 0 0;
+  }

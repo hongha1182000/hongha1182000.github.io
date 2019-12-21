@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+     <link rel="stylesheet" href="style1.css">
+     <link rel="stylesheet" href="clock.css">
+      <script src="https://kit.fontawesome.com/ab7ca37fb2.js" crossorigin="anonymous"></script>
+     <!-- <link src="https://fonts.googleapis.com/css?family=Oswald:700">
+     <script src="https://npmcdn.com/react@15.3.0/dist/react.min.js"></script>
+     <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js"></script> -->
+</head>
+<body>
+    <div class="menu-top">
+        <table>
+            <tr>
+                <th class="home">
+                    <i class="fas fa-home" style="color:  aliceblue ;font-size: 30px;"></i>
+                    <h4 style="font-size: 15px; color: aliceblue;">Trang chủ</h4>
+                </th>
+                <th class="none">
+                    <p style="font-style: oblique; color: aliceblue;">Thay đổi cách gọi món đơn thuần và nhàm chán </p>
+                </th>
+                <th class="users">
+                    <i class="fas fa-user" style=" color: white ;font-size: 30px; "></i>
+                    <h4 style="font-size: 15px; color: aliceblue;">Tài khoản</h4>               
+                </th>
+            </tr>
+        </table> 
+    </div>
+    <div class="banner" >
+        <div class="clock">
+            <p class="date">{{ date }}</p>
+            <p class="time">{{ time }}</p>
+            <p class="text">DIGITAL CLOCK with Vue.js</p>
+        </div>
+    </div>
+    <div class="main">
+
+    </div>
+    <div class="footer"> 
+    <script src="clock.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </div>
+</body>
+</html>

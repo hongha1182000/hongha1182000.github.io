@@ -1,27 +1,49 @@
-body {
-    background-color: rgb(68, 116, 74);
-}
-
-.container {
-    width: 450px;
-    height: 500px;
-    background-color: blanchedalmond;
-    margin: auto;
-    border-radius: 2% ;
-    margin-top: 150  px ;
-}
-
-.container h1 {
-    text-align: center;
-}
-
-/* .bb{
-    margin: auto;
-    background-color: salmon;
+.menu-top{
     width: 100%;
+    height: 100px;
+    background-color:rgb(218, 31, 31)
 }
-#form{
-    width: 100px;
-    padding: auto;
+.home{
+    margin-top: 10px;
+    width: 5%;
+    height: 100px;
     text-align: center;
-} */
+    margin: auto;
+}
+.home h4{
+    margin-top: 5px;
+}
+.none{
+    margin-top: 10px;
+    width: 95%;
+    height: 100px;
+    text-align: center;
+ }
+.users {
+    margin-top: 10px;
+    width: 5%;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+
+}
+.users h4{
+    margin-top: 5px;
+}
+.banner{
+     width: 100%;
+     height: 518px;
+     background-image: url(https://scontent.fhan4-1.fna.fbcdn.net/v/t1.15752-9/79343222_2621791187898550_4562353946756120576_n.png?_nc_cat=105&_nc_oc=AQlFXZ1rk6eAGADxF8k6Rc15BbftOdNBXrU5k5THptL2e7hFdmyERIGMSgizY1duibY&_nc_ht=scontent.fhan4-1.fna&oh=a0a94f65d4a1afbbcbd9a2bd0fab06a8&oe=5EB06D7A);
+    
+    }
+ 
+ .main{
+     width: 100%;
+     height: 2000px;
+     background-color: white;
+ }
+.footer{
+     width: 100%;
+    height: 100px;
+    background-color: cyan;
+ }

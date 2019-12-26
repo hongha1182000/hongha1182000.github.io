@@ -1,44 +1,149 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
-     <link rel="stylesheet" href="style1.css">
-     <link rel="stylesheet" href="clock.css">
-      <script src="https://kit.fontawesome.com/ab7ca37fb2.js" crossorigin="anonymous"></script>
-     <!-- <link src="https://fonts.googleapis.com/css?family=Oswald:700">
-     <script src="https://npmcdn.com/react@15.3.0/dist/react.min.js"></script>
-     <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js"></script> -->
+    <title>EAT WHAT</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="clock.css">
+    <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="menu-top">
+    <div class=menu_top>
+        <ul>
+          <li><i class="fas fa-home" style="font-size: 25px;"></i></li>
+          <li>Giới Thiệu</li>
+        </ul>
+        <li id="account"><i class="fas fa-user-circle"></i></li>
+        <li id="sentence">Thay đổi cách gọi món đơn thuần và nhàm chán </li>
+    
+      </div>
+    <!-- <div class="menu-top">
         <table>
             <tr>
                 <th class="home">
-                    <i class="fas fa-home" style="color:  aliceblue ;font-size: 30px;"></i>
-                    <h4 style="font-size: 15px; color: aliceblue;">Trang chủ</h4>
+                    <i class="far fa-home" style="color: black ;font-size: 30px;"></i>
+                    <h4 style="font-size: 15px; color: black;">Eat What</h4>
                 </th>
                 <th class="none">
-                    <p style="font-style: oblique; color: aliceblue;">Thay đổi cách gọi món đơn thuần và nhàm chán </p>
+                    <p
+                        style="font-style: italic  ;font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; color: black; font-size: 30px;">
+                        Thay đổi cách gọi món đơn thuần và nhàm chán </p>
                 </th>
                 <th class="users">
-                    <i class="fas fa-user" style=" color: white ;font-size: 30px; "></i>
-                    <h4 style="font-size: 15px; color: aliceblue;">Tài khoản</h4>               
+                    <i class="far fa-user" style=" color: black;font-size: 30px; "></i>
                 </th>
             </tr>
-        </table> 
-    </div>
-    <div class="banner" >
+        </table>
+    </div> -->
+    <div class="banner">
         <div class="clock">
-            <p class="date">{{ date }}</p>
-            <p class="time">{{ time }}</p>
-            <p class="text">DIGITAL CLOCK with Vue.js</p>
+            <div class="hourHand"></div>
+            <div class="minuteHand"></div>
+            <div class="secondHand"></div>
+            <div class="center"></div>
+            <div class="time"></div>
+            <ul>
+                <li><span>1</span></li>
+                <li><span>2</span></li>
+                <li><span>3</span></li>
+                <li><span>4</span></li>
+                <li><span>5</span></li>
+                <li><span>6</span></li>
+                <li><span>7</span></li>
+                <li><span>8</span></li>
+                <li><span>9</span></li>
+                <li><span>10</span></li>
+                <li><span>11</span></li>
+                <li><span>12</span></li>
+            </ul>
         </div>
-    </div>
-    <div class="main">
 
     </div>
-    <div class="footer"> 
-    <script src="clock.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <div class="main">
+        <header>
+            <p
+                style="font-style: italic  ;font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; color: black; font-size: 50px;">
+                Random to dishes - phong cách gọi món hoàn toàn khác biệt </p>
+        </header>
+        <div class="row">
+            <p
+                style="font-style: italic  ;font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; color: black; font-size: 30px;">
+                Nếu bạn thấy quá khó khăn trong việc tìm các món ngon cho bữa ăn của mình hay cảm thấy quá khó để ra
+                quyết định vậy EAT WHAT luôn có thể giúp bạn. </p>
+        </div>
+        <div class="picture1">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60"
+                alt="">
+            <p
+                style="font-style: italic  ;font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; color: black; font-size: 50px;">
+                Bữa sáng!
+            </p>
+
+            <img src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.15752-9/80005879_2471596129747478_8342932203923046400_n.jpg?_nc_cat=102&_nc_oc=AQkgdteDXkKKZXST3hL4LBs0pkGJfK2pcb5Fju1uKaRpM7SmbIz2Duak_WxGCC2ZjEE&_nc_ht=scontent.fhan2-2.fna&oh=59fd71518a311ccb6967ad1048a8d36a&oe=5E659A75"
+                alt="">
+            <p
+                style="font-style: italic  ;font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; color: black; font-size: 50px;">
+                Bữa trưa!
+            </p>
+
+            <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-9/79890537_2472871126259372_3440302283366072320_n.jpg?_nc_cat=101&_nc_oc=AQlo-AoR9uM4eKR64XdHg2ckQnL6WC6dqndDu7yRMUjhCJunh2MgYRCf5vHuG45EF14&_nc_ht=scontent.fhan2-3.fna&oh=0120ec62e4dd7046b1f72e8f98a08ba6&oe=5E69918F"
+                alt="">
+            <p
+                style="font-style: italic  ;font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; color: black; font-size: 50px;">
+                Bữa tối!
+            </p>
+
+            <p
+                style="font-style: italic  ;font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; color:black; font-size: 50px; font-weight: 550;">
+                Bắt đầu ngày mới bằng một bữa như ý hãy xem những gợi ý tuyệt vời mà chúng tôi dành cho bạn ngay tại đây
+                nhé! </p>
+
+        </div>
+        <!-- <div class="pick">
+            <button>
+                <img src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.15752-9/79812028_721766731647140_6433490564183752704_n.png?_nc_cat=109&_nc_oc=AQnlEYT1woHDL4zRekoaLDEc7tzmIxFEY_niFJvti91gvUNxKUXQDtVI1q9KCDbukZ0&_nc_ht=scontent.fhan3-1.fna&oh=9e209c0c476be933c9cadd1f08f214b3&oe=5E72A397" alt="">
+            </button>
+        </div> -->
     </div>
+    <div class="footer">
+        <div class="right">
+            <p
+                style="font-style: italic  ;font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; color: whitesmoke; font-size: 20px;">
+                Hãy luôn dõi theo Eat WHAT nha các bạn!
+            </p>
+            <div class="block">
+                <a target="_blank"
+                    href="https://www.facebook.com/dishesrandom/?modal=admin_todo_tour&notif_id=1577118525807653&notif_t=page_invite"><i
+                        class="fab fa-facebook" style=" color: #4D6AFF"></i></a>
+                <a target="_blank" href="https://www.instagram.com/rtdewyc/"><i class="fab fa-instagram" style="color:#E88538"></i></a>
+                <a target="_blank" href="https://twitter.com/grabvn"><i class="fab fa-twitter " style="color: white;"></i></a>
+
+            </div>
+
+        </div>
+        <div class="mid">
+            <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.15752-9/79596704_1309398712601969_7285436587641405440_n.png?_nc_cat=105&_nc_oc=AQnwqG60RP7BbfLOHkPVjhZzrcFk1oNUW1FNPJGMhrZccZcDy84y3p2FdCSRJBWUyzs&_nc_ht=scontent.fhan2-4.fna&oh=10167013d76c5062ec3c921ccd62ebf5&oe=5E661567"
+                alt="">
+        </div>
+        <div class="left">
+            <p
+                style="font-style: italic  ;font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif; color: whitesmoke; font-size: 14px;">
+                Design by Cường Nguyễn
+                <br>
+                Hữu Đức
+                <br>
+                Hà Sữa
+                <br>
+                Minh Huyền
+            </p>
+
+        </div>
+    </div>
+    <audio src="https://sampleswap.org/samples-ghost/DRUMS%20and%20SINGLE%20HITS/snares/5[kb]sidestick.aif.mp3"
+        class="audio"></audio>
+    <script src="clock.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>

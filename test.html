@@ -1,15 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="clock.js">
-    <link rel="stylesheet" href="clock.css">
-</head>
-<body>
-    <div id="clock">
-        <p class="date">{{ date }}</p>
-        <p class="time">{{ time }}</p>
-        <p class="text">DIGITAL CLOCK with Vue.js</p>
-    </div>
+<html>
 
+<head>
+  <title>Trang Chủ</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://npmcdn.com/react@15.3.0/dist/react.min.js"></script>
+  <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js"></script>
+  <link rel="stylesheet" href="styleindex.css">
+</head>
+
+<body>
+  <div class=menu_top>
+    <ul>
+      <li><i class="fas fa-home" style="font-size: 25px;"></i></li>
+      <li>Giới Thiệu</li>
+    </ul>
+    <li id="account"><i class="fas fa-user-circle"></i></li>
+    <li id="sentence">Thay đổi cách gọi món đơn thuần và nhàm chán </li>
+
+  </div>
+  <div class="baner">
+      <!-- <img src="https://scontent.fhan5-7.fna.fbcdn.net/v/t1.15752-9/81662667_603590483729323_2634298489986613248_n.png?_nc_cat=103&_nc_ohc=x-Z6nJU4DCsAQnjjX_ulN-ds-Gs7c-z1d4x9cvIUBZgG2xBqnh63wnsPQ&_nc_ht=scontent.fhan5-7.fna&oh=f8c6a8096bf5e1b1ae695749b8abe662&oe=5EA96B8F" alt=""> -->
+    <!-- <img src="https://www.grab.com/vn/wp-content/uploads/sites/11/2018/05/GrabFood-EX-Desktop-HeaderImageV1.jpg"> -->
+    <div class="clock">
+      <!-- <div class="background-clock"></div> -->
+      <div class="hours">
+        <div class="first">
+          <div class="number">0</div>
+        </div>
+        <div class="second">
+          <div class="number">0</div>
+        </div>
+      </div>
+      <div class="tick">:</div>
+      <div class="minutes">
+        <div class="first">
+          <div class="number">0</div>
+        </div>
+        <div class="second">
+          <div class="number">0</div>
+        </div>
+      </div>
+      <div class="tick">:</div>
+      <div class="seconds">
+        <div class="first">
+          <div class="number">0</div>
+        </div>
+        <div class="second infinite">
+          <div class="number">0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="end">
+    <p>Món Ăn Bạn Nên Thử</p>
+  </div>
+  <div class="aa">
+    <div class="left">
+      <img
+        src="https://images.foody.vn/res/g73/722012/prof/s640x400/foody-upload-api-foody-mobile-28660878_16022019865-180307140148.jpg">
+      <blockquote>
+        <i>"Thân anh như ổ bánh mì<br>
+        Em mà đói bụng, nhâm nhi cầm chừng"</i>
+      </blockquote>
+      -Khuyết Danh-
+    </div>
+    <div class="right">
+      <div class="name-restaurant">Phương Min - Bông Lan Trứng Muối</div>
+      <div class="address-restaurant"><i class="fas fa-map-marker-alt"></i> 5 Hàng Mắm, Quận Hoàn Kiếm, Hà Nội</div>
+      <div class="cost-restaurant">85.000 VNĐ</div>
+      <a href="#" class="order-restaurant">
+        <p>Đặt Hàng</p>
+        <img src="https://www.now.vn/app/assets/img/nowvn.png?aa6bbddbf923c9dfd35ca83a7d068e6d">
+      </a>
+    </div>
+  </div>
+  <script src="eatwhat.js"></script>
 </body>
+
 </html>

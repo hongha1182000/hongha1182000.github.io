@@ -652,5 +652,9 @@ let dinner=[
         "link": "https://www.now.vn/ha-noi/rongu-buffet-hotpot",
         "star": "4.5",
     },
-
 ]
+
+let parent = document.getElementById("parent");
+for (let i = 0; i < 10; i++) {
+  parent.innerHTML += "<div>Child " + i + "</div>";
+}

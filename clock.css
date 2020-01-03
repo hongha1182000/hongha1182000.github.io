@@ -4,8 +4,8 @@
     border-radius: 50%;
     margin : 100px auto 0px 9px;
     position: relative;
-    border: 5px solid rgb(16, 19, 16);
-    float: left;
+    border: 5px solid white;
+    float: right;
     
 
 }
@@ -94,7 +94,7 @@
     text-align: center;
     line-height: 20px;
     font-size: 10px;
-    color: black;
+    color: whitesmoke;
 }
 .clock ul li:nth-child(1){
     right: 22%;

@@ -1,0 +1,56 @@
+body{
+    background-image: url(https://www.tokkoro.com/picsup/2606843-autumn-latest-hd-widescreen-wallpaper-free-download.jpg);
+    /* background-image: url(https://c.stocksy.com/a/BW2600/z9/1439651.jpg?1577728096); */
+    background-repeat: repeat;
+    background-size: cover;
+    /* background-color:#FFC400; */
+}
+.bg {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.aloo {
+    height: auto;
+}
+
+.top {
+    text-align: center;
+}
+
+.info {
+    font-size: 32px;
+    text-align: center;
+
+;
+}
+@import url('https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+.intro{
+    font-size: 30px;
+    font-weight: 50;
+    font-family: 'Source Sans Pro';
+}
+.name{
+    text-align: center;
+}
+.aa{
+    font-size: 55px;
+    color: white;
+    font-family:'Lobster' ;
+}
+.container p{
+    color: white;
+}
+.card-body p{
+    color: black;
+    text-align: center;
+
+}
+.info a{
+    margin: 10px;
+}
+.info :hover
+{
+    font-size: 40px;
+}

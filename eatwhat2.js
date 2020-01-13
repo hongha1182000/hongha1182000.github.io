@@ -1,5 +1,4 @@
-let lunch = [
-    {
+let lunch = [{
         "img": "https://images.foody.vn/res/g9/84681/prof/s280x175/foody-upload-api-foody-mobile-pizza-hut-190926093224.jpg",
         "name": "pizza hut",
         "add": "Số 409 Kim Mã, Quận Ba Đình, Hà Nội ",
@@ -7,7 +6,7 @@ let lunch = [
         "price": "80.000đ - 300.000đ ",
         "link": "https://www.now.vn/ha-noi/pizza-hut-kim-ma",
         "star": "4.5",
-    }, 
+    },
     {
         "img": "https://images.foody.vn/res/g2/16600/prof/s280x175/foody-upload-api-foody-mobile-1-jpg-180618133343.jpg",
         "name": "the pizza company",
@@ -133,7 +132,7 @@ let lunch = [
         "price": "100.000đ - 220.000đ",
         "link": "https://www.foody.vn/ha-noi/jlegu-bbq-nuong-han-quoc",
         "star": "4",
-    }, 
+    },
     {
         "img": "https://images.foody.vn/res/g1/7425/prof/s280x175/foody-mobile-mi-jpg-523-635833535416969323.jpg",
         "name": "Mì Hàn Quốc",
@@ -217,24 +216,8 @@ let lunch = [
     },
 ]
 
-// let danhSachSanPham = document.getElementById('danh-sach-san-pham')
-// for (let sanpham of lunch) {
-//     danhSachSanPham.innerHTML += "<div class='food'> \
-//             <div class='ava'> \
-//                 <img src='" + sanpham.img + "'> \
-//             </div> \
-//             <div class='name'> \
-//                 <h3>" + sanpham.name + "</h3> \
-//                 <h4>" + sanpham.add + "</h4> \
-//                 <hr> \
-//                 <p>" + sanpham.type + "</p> \
-//                 <p style='text-align: right; float: right;'>" + sanpham.price + "</p> \
-//             </div> \
-//         </div>";
-// }
-
 let danhSachSanPham = document.getElementById('danh-sach-san-pham')
-for (let sanpham of JSON.parse(localStorage.getItem("cart"))) {
+for (let sanpham of lunch) {
     danhSachSanPham.innerHTML += "<div class='food'> \
             <div class='ava'> \
                 <img src='" + sanpham.img + "'> \
@@ -248,3 +231,38 @@ for (let sanpham of JSON.parse(localStorage.getItem("cart"))) {
             </div> \
         </div>";
 }
+
+
+const listProduct = document.getElementsByClassName("food")
+let cart = [];
+for (let i = 0; i < listProduct.length; i++) {
+    listProduct.item(i).addEventListener("click", function () {
+        cart.push(lunch[i]);
+        localStorage.setItem("cart", JSON.stringify(cart))
+        let cuongalo =JSON.parse(localStorage.getItem("cart"));
+        document.getElementById('menuTopDem').innerHTML=cuongalo.length;            
+        console.log(cart)
+      
+    })
+}
+
+function updateTime() {
+    const date = new Date();
+    let h = date.getHours();
+    let m = date.getMinutes();
+    let s = date.getSeconds();
+    if (m < 10) {
+      m = "0" + m;
+    }
+    if (s < 10) {
+      s = "0" + s;
+    }
+    if (h < 10){
+      h = "0" + h;
+    }
+    document.getElementById("banner-clock").innerHTML = h + ":" + m + ":" + s;
+  }
+  updateTime();
+  setInterval(function () {
+    updateTime();
+  }, 1000)

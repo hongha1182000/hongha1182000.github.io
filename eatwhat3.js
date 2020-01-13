@@ -1,5 +1,4 @@
-let dinner=[
-    {
+let dinner = [{
         "img": "https://images.foody.vn/res/g29/287783/prof/s280x175/foody-mobile-dimsum-jpg-942-636154099003644737.jpg",
         "name": "Nhà hàng Dimsum",
         "add": "Số 13 - 15 Nhà Chung, Quận Hoàn Kiếm, Hà Nội",
@@ -232,3 +231,35 @@ for (let sanpham of dinner) {
             </div> \
         </div>";
 }
+const listProduct = document.getElementsByClassName("food")
+let cart = [];
+for (let i = 0; i < listProduct.length; i++) {
+    listProduct.item(i).addEventListener("click", function () {
+        cart.push(dinner[i]);
+        localStorage.setItem("cart", JSON.stringify(cart))
+        let cuongalo =JSON.parse(localStorage.getItem("cart"));
+        document.getElementById('menuTopDem').innerHTML=cuongalo.length;            
+        console.log(cart)
+          })
+}
+
+function updateTime() {
+    const date = new Date();
+    let h = date.getHours();
+    let m = date.getMinutes();
+    let s = date.getSeconds();
+    if (m < 10) {
+      m = "0" + m;
+    }
+    if (s < 10) {
+      s = "0" + s;
+    }
+    if (h < 10){
+      h = "0" + h;
+    }
+    document.getElementById("banner-clock").innerHTML = h + ":" + m + ":" + s;
+  }
+  updateTime();
+  setInterval(function () {
+    updateTime();
+  }, 1000)

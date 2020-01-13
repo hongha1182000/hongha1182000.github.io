@@ -16,12 +16,12 @@ let breakfast = [{
     "link": "https://www.now.vn/ha-noi/chao-suon-dong-xuan",
     "star": "4.5"
 },
-{
+{   
     "img": "https://images.foody.vn/res/g89/880763/prof/s280x175/foody-upload-api-foody-mobile-mien-tron-1-190114103637.jpg",
     "name": "Bánh đa trộn",
     "add": "số 6 Ngõ 118 Nguyễn Khánh Toàn, Quận Cầu Giấy, Hà Nội",
     "type": "món ăn",
-    "price": "món ăn",
+    "price": "20.000đ - 50.000đ",
     "link": "https://www.now.vn/ha-noi/banh-da-tron-mien-tron-nguyen-khanh-toan",
     "star": "4.5"
 },
@@ -104,7 +104,7 @@ let breakfast = [{
     "type": "đồ uống",
     "price": "30.000đ - 65.000đ",
     "link": "https://www.now.vn/ha-noi/eden-coffee",
-    "star": ""
+    "star": "5"
 },
 {
     "img": "https://images.foody.vn/res/g7/68352/prof/s280x175/foody-mobile-pho-bat-dan-dao-tan-ha-noi-140331043024.jpg",
@@ -216,6 +216,7 @@ let breakfast = [{
 },
 ]
 
+let x = {};
 
 let danhSachSanPham = document.getElementById('danh-sach-san-pham')
 for (let sanpham of breakfast) {
@@ -232,3 +233,15 @@ for (let sanpham of breakfast) {
             </div> \
         </div>";
 }
+
+const listProduct=document.getElementsByClassName("food")
+let cart  = [];
+for (let i = 0; i < listProduct.length;i++) {
+    listProduct.item(i).addEventListener("click" , function() {
+        cart.push(breakfast[i]);
+        localStorage.setItem("cart", cart)
+        alert("thêm thành công");
+        console.log(cart)
+    })      
+}
+

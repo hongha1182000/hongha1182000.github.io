@@ -131,7 +131,7 @@ let lunch = [
         "add": "Số 70 Nguyễn Khiết, Quận Hoàn Kiếm, Hà Nội",
         "type": "món ăn",
         "price": "100.000đ - 220.000đ",
-        "link": "v",
+        "link": "https://www.foody.vn/ha-noi/jlegu-bbq-nuong-han-quoc",
         "star": "4",
     }, 
     {

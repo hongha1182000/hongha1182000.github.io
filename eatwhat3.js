@@ -183,7 +183,7 @@ let dinner = [{
         "name": "Buffet Chay Hương Thiền",
         "add": "số 261 Xã Đàn, Quận Đống Đa, Hà Nội",
         "type": "món ăn",
-        "price": "",
+        "price": "30.000đ - 150.000đ",
         "link": "https://www.now.vn/ha-noi/huong-thien-buffet-chay",
         "star": "4.5",
     },

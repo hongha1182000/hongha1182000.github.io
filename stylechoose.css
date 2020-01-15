@@ -53,18 +53,20 @@ body {
     font-size: 30px;
     margin-top: 10px;
 }
-#menuTopDem{
+
+#menuTopDem {
     list-style: none;
     float: right;
     color: white;
     font-size: 26px;
     /* padding-left: 10px; */
-  }
-  .chen{
-    height: 50px;
-  }
+}
 
-  .baner {
+.chen {
+    height: 50px;
+}
+
+.baner {
     width: 100%;
     height: 500px;
     background-image: url(https://scontent-hkg3-2.xx.fbcdn.net/v/t1.15752-9/s2048x2048/80673844_3058626950865033_8187647463767670784_n.jpg?_nc_cat=110&_nc_ohc=qOQQjoVma68AQlYoAxL46uHNapI91z-vD0j9Ja59nudsk-whGnuyHL3QA&_nc_ht=scontent-hkg3-2.xx&oh=4b8b2af4ead217af732eb80a280cf213&oe=5E76CC06);
@@ -75,38 +77,39 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-  }
-  
-  /* * {
+}
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   } */
-  
-  .bg-blur {
+
+.bg-blur {
     background-color: rgba(1, 1, 1, 0.3);
-  }
-  
-  
-  .clock{
+}
+
+
+.clock {
     font-family: sans-serif;
-    bottom:0px;
-  
-    
-  }
-  .heading {
-    color:white;
+    bottom: 0px;
+
+
+}
+
+.heading {
+    color: white;
     font-size: 150px;
     text-shadow: 5px 5px 5px black
-  }
+}
 
 .dcmm {
-    height: 1500px;
+    height: auto;
     margin-left: 75px;
     border-radius: 6px;
     margin-bottom: 20px;
     position: relative;
-    
+
 }
 
 .wrap {
@@ -116,16 +119,18 @@ body {
     text-align: center;
 }
 
-.wrap p {
+#textTop {
     font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    color: black ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
-    
+    text-align: center;
+
 }
-#danh-sach-san-pham{
+
+#danh-sach-san-pham {
     padding-top: 50px;
 }
 
@@ -207,6 +212,7 @@ body {
 .p {
     text-align: center;
 }
+
 .mid {
     width: 10%;
     height: 80px;
@@ -224,7 +230,7 @@ body {
 .right {
     width: 50%;
     height: 80px;
-    float: left ;
+    float: left;
     margin: 0px 0px 0px 100px;
 
 }
@@ -245,4 +251,18 @@ body {
     padding-top: 5px;
     font-size: 12px;
     margin-right: 30px;
+}
+
+.addMethod {
+    text-align: center;
+    /* margin: 20px; */
+    margin-bottom: 50px;
+}
+.addMethod button{
+    margin-top: 50px;
+    height: 60px;
+    background-color: #dc3545;
+    border-radius: 5%;
+    border: 0px;
+
 }

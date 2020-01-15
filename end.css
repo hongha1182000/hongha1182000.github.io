@@ -4,37 +4,6 @@ body {
     margin: auto;
   }
   
-  /* 
-  body {
-      background: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }  */
-  /* 
-  .clock {
-    height: 500px;
-    line-height: 651px;
-    color: white;
-    font-size: 22vh;
-    font-family: sans-serif;
-    display: inline-flex;
-    position: relative;
-    overflow: hidden;
-    z-index: 1; */
-  
-    /* background-color: rgba(27,67,87, 0.5); */
-  /* } */
-  
-  /* .background-clock {
-      position: absolute;
-      background: rgba(1,1,1,0.3);
-      width: 100%;
-      margin-top: 189px;
-      top: 67%;
-      height: 30%;
-      margin: -15% 0 0 0;
-  } */
   
   .end {
     text-align: center;
@@ -134,3 +103,86 @@ body {
     margin-left: 38px;
     margin-top: 37px;
   }
+  .menu_top {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    z-index: 9;
+}
+
+.menu_top ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu_top li {
+    list-style: none;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    padding: 0px 20px 0px 20px;
+}
+
+#sentence {
+    float: right;
+    font-style: italic;
+    font-weight: 500;
+    font-family: arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+#account {
+    list-style: none;
+    float: right;
+    padding-right: 0px;
+    color: white;
+
+
+}
+
+#account i {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#menuTopDem {
+    list-style: none;
+    float: right;
+    color: white;
+    font-size: 26px;
+}
+
+.chen {
+    height: 50px;
+}
+
+.baner {
+    width: 100%;
+    height: 500px;
+    background-image: url(https://scontent-hkg3-2.xx.fbcdn.net/v/t1.15752-9/s2048x2048/80673844_3058626950865033_8187647463767670784_n.jpg?_nc_cat=110&_nc_ohc=qOQQjoVma68AQlYoAxL46uHNapI91z-vD0j9Ja59nudsk-whGnuyHL3QA&_nc_ht=scontent-hkg3-2.xx&oh=4b8b2af4ead217af732eb80a280cf213&oe=5E76CC06);
+    /* background-image: url(https://scontent.fhan5-7.fna.fbcdn.net/v/t1.15752-9/81662667_603590483729323_2634298489986613248_n.png?_nc_cat=103&_nc_ohc=x-Z6nJU4DCsAQnjjX_ulN-ds-Gs7c-z1d4x9cvIUBZgG2xBqnh63wnsPQ&_nc_ht=scontent.fhan5-7.fna&oh=f8c6a8096bf5e1b1ae695749b8abe662&oe=5EA96B8F); */
+    /* background-image: url(./banner.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.bg-blur {
+    background-color: rgba(1, 1, 1, 0.3);
+}
+.heading {
+  color: white;
+  font-size: 150px;
+  text-shadow: 5px 5px 5px black
+}
+
+.clock {
+    font-family: sans-serif;
+    bottom: 0px;
+
+
+}

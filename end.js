@@ -43,3 +43,24 @@ function getStar(score) {
   <a href='#' onclick='location.reload()'><button type='button' class='btn btn-danger ranDombutton'>Thử lại nào!</button></a>\
   </div>\
   </div>";
+
+  function updateTime() {
+    const date = new Date();
+    let h = date.getHours();
+    let m = date.getMinutes();
+    let s = date.getSeconds();
+    if (m < 10) {
+      m = "0" + m;
+    }
+    if (s < 10) {
+      s = "0" + s;
+    }
+    if (h < 10){
+      h = "0" + h;
+    }
+    document.getElementById("banner-clock").innerHTML = h + ":" + m + ":" + s;
+  }
+  updateTime();
+  setInterval(function () {
+    updateTime();
+  }, 1000)

@@ -210,7 +210,7 @@ let dinner = [{
         "name": "Rongu - Buffet Hotpot",
         "add": "Số 136 Xuân Thủy, Quận Cầu Giấy, Hà Nội",
         "type": "món ăn",
-        "price": "99.000đ",
+        "price": "30.000đ - 99.000đ",
         "link": "https://www.now.vn/ha-noi/rongu-buffet-hotpot",
         "star": "4.5",
     },

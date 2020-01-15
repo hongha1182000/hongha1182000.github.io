@@ -1,5 +1,5 @@
 let aboutus = [{
-    "img": "https://scontent.fhan5-2.fna.fbcdn.net/v/t1.15752-9/80640168_1060549887642554_8847665842742099968_n.jpg?_nc_cat=102&_nc_ohc=0blrmIGUNrIAQlVKLSQo7Hv6e0OCdxXYVOow1i4VR7sFqLuy4SYa0xgcg&_nc_ht=scontent.fhan5-2.fna&oh=7b9fbe4ceb0848652444ba11405faa58&oe=5E6EC88E",
+    "img": "https://scontent.fhan1-1.fna.fbcdn.net/v/t1.15752-9/82024468_2715272881927196_4271738089933635584_n.jpg?_nc_cat=109&_nc_ohc=iXdlY30UAEYAQlOmJ8WdWzE5rq8iB0YAuPaYaOi5kSotQCVW44uQMdlAA&_nc_ht=scontent.fhan1-1.fna&oh=3724208384d29a7f6967c3e11061eb8e&oe=5ED9536A",
     "name": "Nguyễn Văn Cường",
     "birth": "21/05/2000",
     "fb": "https://www.facebook.com/nguyencuong21520",

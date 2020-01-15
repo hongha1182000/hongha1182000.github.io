@@ -25,11 +25,6 @@ function getStar(score) {
   test.innerHTML = "<div class='left'>\
   <img\
     src='" + cuongalo[m].img + "'>\
-  <blockquote>\
-    <i>'Thân anh như ổ bánh mì<br>\
-      Em mà đói bụng, nhâm nhi cầm chừng'</i>\
-  </blockquote>\
-  -Khuyết Danh-\
   </div>\
   <div class='right'>\
   <div class='name-restaurant'>" + cuongalo[m].name + "</div>\
@@ -45,6 +40,6 @@ function getStar(score) {
     <img src='https://www.now.vn/app/assets/img/nowvn.png?aa6bbddbf923c9dfd35ca83a7d068e6d'>\
   </a>\
   <div>\
-  <a href='#' onclick='location.reload()'><button type='button' class='btn btn-danger ranDombutton'>Nếu Mày Không Thích Thì Bấm</button></a>\
+  <a href='#' onclick='location.reload()'><button type='button' class='btn btn-danger ranDombutton'>Thử lại nào!</button></a>\
   </div>\
   </div>";

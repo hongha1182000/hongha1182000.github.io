@@ -200,27 +200,17 @@ body {
 .left {
     width: 40%;
     height: 80px;
-    float: left;
+    float: right;
     text-align: center;
 }
 
 .p {
     text-align: center;
-
-    /* margin: 6px 0px 0px 100px; */
 }
-
-.block {
-    margin: auto;
-}
-
 .mid {
     width: 10%;
-    /* background-color: black; */
     height: 80px;
-    float: left;
-    text-align: center;
-
+    float: right;
 }
 
 .mid img {
@@ -232,10 +222,9 @@ body {
 }
 
 .right {
-    width: 40%;
-    /* background-color: whitesmoke; */
+    width: 50%;
     height: 80px;
-    float: left;
+    float: left ;
     margin: 0px 0px 0px 100px;
 
 }

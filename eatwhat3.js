@@ -239,6 +239,7 @@ for (let i = 0; i < listProduct.length; i++) {
         localStorage.setItem("cart", JSON.stringify(cart))
         let cuongalo =JSON.parse(localStorage.getItem("cart"));
         document.getElementById('menuTopDem').innerHTML=cuongalo.length;            
+        alert("Kiểm tra giỏ hảng ở góc phải bạn nhé!")           
         console.log(cart)
           })
 }

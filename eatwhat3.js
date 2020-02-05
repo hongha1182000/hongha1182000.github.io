@@ -237,11 +237,11 @@ for (let i = 0; i < listProduct.length; i++) {
     listProduct.item(i).addEventListener("click", function () {
         cart.push(dinner[i]);
         localStorage.setItem("cart", JSON.stringify(cart))
-        let cuongalo =JSON.parse(localStorage.getItem("cart"));
-        document.getElementById('menuTopDem').innerHTML=cuongalo.length;            
-        alert("Kiểm tra giỏ hảng ở góc phải bạn nhé!")           
+        let cuongalo = JSON.parse(localStorage.getItem("cart"));
+        document.getElementById('menuTopDem').innerHTML = cuongalo.length;
+        alert("Kiểm tra giỏ hảng ở góc phải bạn nhé!")
         console.log(cart)
-          })
+    })
 }
 
 function updateTime() {
@@ -250,17 +250,15 @@ function updateTime() {
     let m = date.getMinutes();
     let s = date.getSeconds();
     if (m < 10) {
-      m = "0" + m;
+        m = "0" + m;
     }
     if (s < 10) {
-      s = "0" + s;
+        s = "0" + s;
     }
-    if (h < 10){
-      h = "0" + h;
+    if (h < 10) {
+        h = "0" + h;
     }
     document.getElementById("banner-clock").innerHTML = h + ":" + m + ":" + s;
-  }
-  updateTime();
-  setInterval(function () {
-    updateTime();
-  }, 1000)
+}
+setInterval(
+    updateTime(), 1000)

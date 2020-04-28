@@ -657,4 +657,25 @@ let dinner=[
 let parent = document.getElementById("parent");
 for (let i = 0; i < 10; i++) {
   parent.innerHTML += "<div>Child " + i + "</div>";
-}
+};
+
+function updateTime() {
+    const date = new Date();
+    let h = date.getHours();
+    let m = date.getMinutes();
+    let s = date.getSeconds();
+    if (m < 10) {
+      m = "0" + m;
+    }
+    if (s < 10) {
+      s = "0" + s;
+    }
+    if (h < 10){
+      h = "0" + h;
+    }
+    document.getElementById("banner-clock").innerHTML = h + ":" + m + ":" + s;
+  }
+  updateTime();
+  setInterval(function () {
+    updateTime();
+  }, 1000)
